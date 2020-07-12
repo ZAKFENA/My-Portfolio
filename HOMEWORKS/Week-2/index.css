@@ -1,4 +1,38 @@
-[class*="col-"] {
-    width: 100%;
+.brandname-md-3{
+    background-color: teal;
+}
+.navcontainer{
+    background-color: white;
+}
 
+.brandname-md-3{
+    margin-left: 50px;
+    
+}
+#brandname{
+    margin: 20px;
+    color: white;
+    font-style: inherit;
+       
+}
+
+body {background-image: url("./Assets/Images/background\ imag") ;}
+
+.col-md-3
+{
+    background-color: teal; 
+    font-size: 20px;    
+    }
+
+
+    .container {
+        background-color: white;
+        margin: 50px }
+
+.row2{
+    margin-top: auto;
+}
+
+#ProfilePic{
+    float: left;
 }

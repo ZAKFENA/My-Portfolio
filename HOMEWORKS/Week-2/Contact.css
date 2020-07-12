@@ -1,0 +1,21 @@
+
+.brandname-md-3{
+    background-color: teal;
+}
+
+body {background-image: url("./Assets/Images/background\ imag") ;}
+
+.navcontainer{
+    background-color: white;
+}
+
+.brandname-md-3{
+    margin-left: 50px;
+    
+}
+#brandname{
+    margin: 20px;
+    color: white;
+    font-style: inherit;
+       
+}
