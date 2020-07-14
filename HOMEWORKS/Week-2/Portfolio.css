@@ -1,19 +1,40 @@
-body {background-image: url("./Assets/Images/background\ imag") ;}
-
-.brandname-md-3{
-    background-color: teal;
-}
-.navcontainer{
-    background-color: white;
+body {
+  background-image: url("./Assets/Images/background\ imag");
 }
 
-.brandname-md-3{
-    margin-left: 50px;
-    
+.brandname-md-3 {
+  background-color: teal;
 }
-#brandname{
-    margin: 20px;
-    color: white;
-    font-style: inherit;
-       
+.navcontainer {
+  background-color: white;
+}
+
+.brandname-md-3 {
+  margin-left: 50px;
+}
+#brandname {
+  margin: 20px;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+
+.col-md-3 {
+  margin: 25px;
+}
+
+.container {
+  background-color: white;
+  margin-top: 50px;
+  margin-right: 500px;
+  margin-left: 50px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
 }

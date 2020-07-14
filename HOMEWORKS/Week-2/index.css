@@ -1,38 +1,46 @@
-.brandname-md-3{
-    background-color: teal;
+.brandname-md-3 {
+  background-color: teal;
+  margin-left: 50px;
 }
-.navcontainer{
-    background-color: white;
-}
-
-.brandname-md-3{
-    margin-left: 50px;
-    
-}
-#brandname{
-    margin: 20px;
-    color: white;
-    font-style: inherit;
-       
+.navcontainer {
+  background-color: white;
 }
 
-body {background-image: url("./Assets/Images/background\ imag") ;}
-
-.col-md-3
-{
-    background-color: teal; 
-    font-size: 20px;    
-    }
-
-
-    .container {
-        background-color: white;
-        margin: 50px }
-
-.row2{
-    margin-top: auto;
+#brandname {
+  margin: 20px;
+  color: white;
+  font-family: "Playfair Display", serif;
 }
 
-#ProfilePic{
-    float: left;
+body {
+  background-image: url("./Assets/Images/background\ imag");
+}
+
+.col-md-3 {
+  background-color: teal;
+  font-size: 20px;
+}
+
+.container {
+  background-color: white;
+  margin: 50px;
+}
+
+.row2 {
+  margin-top: 30px;
+}
+
+#ProfilePic {
+  float: left;
+  margin-right: 20px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
 }
