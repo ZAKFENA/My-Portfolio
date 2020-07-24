@@ -9,6 +9,6 @@ Random password is created based on what kind of characters the user selects. Us
 ## Screen shots of the working application.
 
 ![password generator demo](./Assets/03-javascript-homework-demo.png)
-![Picking Character](./Assets/Character-picking-criteria.png)
-![Final Product](./Assets/Final.png)
-![Password length Prompt](./Assets/Password-Length-criteria.png)
+![picking character](./Assets/Character-picking-criteria.png)
+![final product](./Assets/Final.png)
+![password length prompt](./Assets/Password-Length-criteria.png)
