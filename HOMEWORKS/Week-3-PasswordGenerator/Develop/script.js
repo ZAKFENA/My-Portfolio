@@ -1,6 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// Arrays from which the random characters will be picked.
 var lowerCase = [
   "a",
   "b",
@@ -93,7 +94,8 @@ var specialChar = [
   "~",
 ];
 
-function getRandomLower(lowerCase) {
+// Functions for getting random characters from the arrays
+function getRandomLower() {
   return lowerCase[Math.floor(Math.random() * lowerCase.length)];
 }
 
@@ -109,19 +111,16 @@ function getRandomCharacters() {
   return specialChar[Math.floor(Math.random() * specialChar.length)];
 }
 
+// Function to combine and join the randomly pickd characters.
 function generatePassword() {
   var lengthPrompt = prompt("How long do you want your password to be?");
+  var passwordPool = [];
 
+  // Prompts and confirms to validate
   if (lengthPrompt < 8 || lengthPrompt > 128 || isNaN(lengthPrompt)) {
     alert("Please enter number between 8 and 128");
     return "Please click Generate Button below";
-  }
-
-  // } else if (specialCharConfirm = true) {
-  //   getRandomLower(lowerCase).concat(
-  //     getRandomNumbers(numbers)
-  //   }
-  else
+  } else
     var specialCharConfirm = confirm(
       "Do you want to have SPECIAL CHARACTER in your password?"
     );
@@ -131,19 +130,28 @@ function generatePassword() {
   var upperCaseConfirm = confirm(
     "Do you want to have UPPER CASE in your password?"
   );
-  var numberConfirm = confirm(
-     "Do you want to have NUMBER in your password?"
-  );
+  var numberConfirm = confirm("Do you want to have NUMBER in your password?");
 
-  var 
+  // Loop to add the randomly picked characters from the arrays of characters to one passwordPool Array until
+  for (var i = 0; i < lengthPrompt; i++) {
+    if (specialCharConfirm) {
+      passwordPool.push(getRandomCharacters());
+    }
 
-  for (var i = 0; i < lengthPrompt.length; i++) {
-    return getRandomLower(lowerCase).concat(
-      getRandomNumbers(numbers),
-      getRandomUpper(upperCase),
-      getRandomCharacters(specialChar)
-    );
+    if (lowerCaseConfirm) {
+      passwordPool.push(getRandomLower());
+    }
+
+    if (upperCaseConfirm) {
+      passwordPool.push(getRandomUpper());
+    }
+
+    if (numberConfirm) {
+      passwordPool.push(getRandomNumbers());
+    }
   }
+
+  return passwordPool.slice(0, lengthPrompt).join("");
 }
 
 // Write password to the #password input
