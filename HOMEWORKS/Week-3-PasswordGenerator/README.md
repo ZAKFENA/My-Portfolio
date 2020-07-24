@@ -5,17 +5,16 @@ Random password is created based on what kind of characters the user selects. Us
 ## Link to working webpage
 
 ```
-https://zakfena.github.io/My-Portfolio/HOMEWORKS/Week-3-PasswordGenerator/Develop/
+[link To Github Site!](https://zakfena.github.io/My-Portfolio/HOMEWORKS/Week-3-PasswordGenerator/Develop/)
+
 ```
-
-## Steps of the code
-
-- The URL of the deployed application.
-
-- The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
 ## Screen shots of the working application.
 
 ```
 ![password generator demo](./Assets/03-javascript-homework-demo.png)
+![Picking Character](./Assets/Character-picking-criteria.png)
+![Final Product](./Assets/Final.png)
+![Password length Prompt](./Assets/Password-Length-criteria.png)
+
 ```
