@@ -1,6 +1,17 @@
 # 04 Multiple Choice Quiz
 
-Random password is created based on what kind of characters the user selects. User selects which characters they want to be included and how long the want it to be from the prompts.
+- Start Function shows the first page with quiz explanation and button to start
+
+- Once started the counter stars counting down.
+
+  - If wrong answer is selected its deducted by 10
+  - If all questions are answered before it gets to zero its cleared out.
+
+- When an answer is selected a Wrong / Correct message pops at the bottom for two seconds.
+
+- When the questions are completed, it directs to a page that shows final score and option to save the score.
+
+- If saved a button is appears that shows scores.
 
 ## Link to working webpage
 
