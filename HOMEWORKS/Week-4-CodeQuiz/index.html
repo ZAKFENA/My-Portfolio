@@ -15,49 +15,110 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
-
-    <div class="card text-center">
-      <div class="card-header">
-        Featured
-      </div>
+    <div class="card text-center" id="questionPage">
+      <div class="card-header"></div>
       <div class="card-body">
         <div class="container">
           <div class="row">
-            <div class="col-sm-3" id="column1">View Highscores</div>
+            <div class="col-sm-3" id="scoreViewer">
+              <button id="btnHighScores">View Highscores</button>
+            </div>
             <div class="col-sm-6" id="column2"></div>
-            <div class="col-sm-3" id="column3">Timer: </div>
+            <div class="col-sm-3"><span id="timer"></span></div>
           </div>
         </div>
-        <h5 class="card-title" id="header">Special title treatment</h5>
-        <p class="card-text" id="question">
-            Try to following code-related questions within the time limit. Keep in mind that the <br>
-            Incorrect answers will penalize your score/time by ten seconds!.
-        </p>
-                      
-        <!-- ???? Not Responsive  -->
-        <div class="container">
-               <div class="row">
-                   <div class="column" id ="btnColumn">
-                        <button id ="btn1" class="btn btn-primary" type="submit">Button...........</button> <br>
-                        <button id ="btn2" class="btn btn-primary" type="submit">Button...........</button> <br>
-                        <button id ="btn3" class="btn btn-primary" type="submit">Button...........</button> <br>
-                        <button id ="btn4" class="btn btn-primary" type="submit">Button...........</button> <br>
-                   </div>
-               </div>
-        </div>
-            
-           
-        
 
-        <div class="card-footer text-muted">
-        2 days ago
+        <div class="container" id="container">
+          <h5 class="row card-title" id="header">Java Code Quiz</h5>
+          <br />
+          <h5 id="scoresList"></h5>
+
+          <div class="row">
+            <p class="card-text" id="question">
+              Try to following code-related questions within the time limit.
+              Keep in mind that the <br />
+              Incorrect answers will penalize your score/time by ten
+              seconds!.<br />
+
+              <button id="startBtn" class="btn btn-primary" type="submit">
+                Start Quiz
+              </button>
+            </p>
+
+            <!-- Force next columns to break to new line -->
+            <div class="w-100"></div>
+
+            <form class="form-inline" id="scoreSubmit">
+              Enter you Initials:
+              <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword2" class="sr-only">Initials</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="scoreInitials"
+                  placeholder="Initials"
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary mb-2"
+                id="btnScoreSave"
+              >
+                Submit
+              </button>
+            </form>
+
+            <!-- Force next columns to break to new line -->
+            <div class="w-100"></div>
+
+            <section id="btnSection">
+              <!-- Force next columns to break to new line -->
+              <div class="w-100"></div>
+              <div class="col-6 col-sm-3">
+                <button id="btn1" class="btn btn-primary" type="submit">
+                  Button.....
+                </button>
+                <br />
+              </div>
+
+              <!-- Force next columns to break to new line -->
+              <div class="w-100"></div>
+              <div class="col-6 col-sm-3">
+                <button id="btn2" class="btn btn-primary" type="submit">
+                  Button...........
+                </button>
+                <br />
+              </div>
+
+              <!-- Force next columns to break to new line -->
+              <div class="w-100"></div>
+              <div class="col-6 col-sm-3">
+                <button id="btn3" class="btn btn-primary" type="submit">
+                  Button...........
+                </button>
+                <br />
+              </div>
+
+              <!-- Force next columns to break to new line -->
+              <div class="w-100"></div>
+              <div class="col-6 col-sm-3">
+                <button id="btn4" class="btn btn-primary" type="submit">
+                  Button...........
+                </button>
+                <br />
+              </div>
+            </section>
+
+            <!-- Force next columns to break to new line -->
+            <div class="w-100"></div>
+            <div class="col-6 col-sm-3" id="answerResult"></div>
+          </div>
+        </div>
       </div>
 
+      <div class="card-footer text-muted"></div>
     </div>
 
-
-
-    <script src="script.js" async defer></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
