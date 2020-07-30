@@ -103,6 +103,7 @@ function setTime() {
 
 // Function starts Quiz
 function startQuiz() {
+  scoresListEl.style.visibility = "hidden";
   btnSectionEl.style.visibility = "visible";
   answerResultEl.style.visibility = "visible";
   headerEl.textContent = questions[0].header;
