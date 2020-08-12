@@ -87,10 +87,81 @@ $(document).ready(function () {
       url: queryURL,
       method: "GET",
     }).then(function (response) {
-      console.log(response.value);
+      // console.log(response.value);
       $("#UVIndex").text(response.value);
 
       // });
+    });
+  }
+
+  function displayForecast(city) {
+    // console.log(savedCities);
+    var APIkey = "8bb29e39d1793c0fac57e32626a2237c";
+
+    var queryURL =
+      "https://api.openweathermap.org/data/2.5/forecast?q=" +
+      city +
+      "&appid=" +
+      APIkey;
+
+    $.ajax({
+      url: queryURL,
+      method: "GET",
+    }).then(function (response) {
+      console.log(response, "Forecast");
+
+      // $(".forecast").setAttribute("backgroundcolor", "gray");
+
+      // Day 1
+
+      $("#temp1").text(
+        "Temp: " +
+          ((response.list[8].main.temp - 273.15) * 1.8 + 32).toFixed(2) +
+          " °F"
+      );
+      $("#humidity1").text("Humidity: " + response.list[8].main.humidity + "%");
+
+      // Day 2
+
+      // $("#day2").val()(response.weather);
+      $("#temp2").text(
+        "Temp: " +
+          ((response.list[16].main.temp - 273.15) * 1.8 + 32).toFixed(2) +
+          " °F"
+      );
+      $("#humidity2").text(
+        "Humidity: " + response.list[16].main.humidity + "%"
+      );
+
+      // Day 3
+      $("#temp3").text(
+        "Temp: " +
+          ((response.list[24].main.temp - 273.15) * 1.8 + 32).toFixed(2) +
+          " °F"
+      );
+      $("#humidity3").text(
+        "Humidity: " + response.list[24].main.humidity + "%"
+      );
+
+      // Day 4
+      $("#temp4").text(
+        "Temp: " +
+          ((response.list[32].main.temp - 273.15) * 1.8 + 32).toFixed(2) +
+          " °F"
+      );
+      $("#humidity4").text(
+        "Humidity: " + response.list[32].main.humidity + "%"
+      );
+
+      // Day 5
+      $("#temp5").text(
+        "Temp: " +
+          ((response.list[39].main.temp - 273.15) * 1.8 + 32).toFixed(2) +
+          " °F"
+      );
+      $("#humidity5").text(
+        "Humidity: " + response.list[39].main.humidity + "%"
+      );
     });
   }
 
@@ -98,6 +169,7 @@ $(document).ready(function () {
   $(document).on("click", ".savedCityButton", function () {
     var city = $(this).attr("data-name");
     displayWeather(city);
+    displayForecast(city);
   });
 
   $("#searchBtn").on("click", function (event) {
@@ -109,6 +181,6 @@ $(document).ready(function () {
 
     displayWeather(city, true);
     console.log(citiesArr);
-    // displayUVIndex();
+    displayForecast(city);
   });
 });
