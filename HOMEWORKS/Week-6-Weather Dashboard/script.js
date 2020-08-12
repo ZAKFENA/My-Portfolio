@@ -1,11 +1,24 @@
 $(document).ready(function () {
   var lat;
   var lon;
-  var currentDate = Date.now();
   var citiesArr = JSON.parse(window.localStorage.getItem("cities")) || [];
   console.log(citiesArr, "beginning");
   var savedCities = localStorage.getItem("cities");
   var savedCitiesArr = JSON.parse(savedCities);
+
+  //Current Date
+  var d = new Date();
+
+  var date = d.getUTCDate();
+  var month = d.getUTCMonth() + 1; // Since getUTCMonth() returns month from 0-11 not 1-12
+  var year = d.getUTCFullYear();
+  var currentDate = date + "/" + month + "/" + year;
+  var forecastDate1 = date + 1 + "/" + month + "/" + year;
+  var forecastDate2 = date + 2 + "/" + month + "/" + year;
+  var forecastDate3 = date + 3 + "/" + month + "/" + year;
+  var forecastDate4 = date + 4 + "/" + month + "/" + year;
+  var forecastDate5 = date + 5 + "/" + month + "/" + year;
+
   renderCities();
   if (citiesArr.length > 0) {
     displayWeather(citiesArr[citiesArr.length - 1]);
@@ -54,7 +67,7 @@ $(document).ready(function () {
       console.log(lat);
       console.log(lon);
       var tempF = ((response.main.temp - 273.15) * 1.8 + 32).toFixed(2);
-      $(".cityName").text(response.name);
+      $(".cityName").text(response.name + " (" + currentDate + ")");
       $(".weatherIcon").attr(("src", response.weather[0]));
       $(".temp").text("Temprature: " + tempF);
       $(".humidity").text("Humidity: " + response.main.humidity);
@@ -101,6 +114,7 @@ $(document).ready(function () {
     var queryURL =
       "https://api.openweathermap.org/data/2.5/forecast?q=" +
       city +
+      "&cnt=5" +
       "&appid=" +
       APIkey;
 
@@ -113,55 +127,54 @@ $(document).ready(function () {
       // $(".forecast").setAttribute("backgroundcolor", "gray");
 
       // Day 1
+      $("#day1").text(forecastDate1);
 
       $("#temp1").text(
         "Temp: " +
-          ((response.list[8].main.temp - 273.15) * 1.8 + 32).toFixed(2) +
+          ((response.list[0].main.temp - 273.15) * 1.8 + 32).toFixed(2) +
           " °F"
       );
-      $("#humidity1").text("Humidity: " + response.list[8].main.humidity + "%");
+      $("#humidity1").text("Humidity: " + response.list[0].main.humidity + "%");
 
       // Day 2
+      $("#day2").text(forecastDate2);
 
-      // $("#day2").val()(response.weather);
       $("#temp2").text(
         "Temp: " +
-          ((response.list[16].main.temp - 273.15) * 1.8 + 32).toFixed(2) +
+          ((response.list[1].main.temp - 273.15) * 1.8 + 32).toFixed(2) +
           " °F"
       );
-      $("#humidity2").text(
-        "Humidity: " + response.list[16].main.humidity + "%"
-      );
+      $("#humidity2").text("Humidity: " + response.list[1].main.humidity + "%");
 
       // Day 3
+      $("#day3").text(forecastDate3);
+
       $("#temp3").text(
         "Temp: " +
-          ((response.list[24].main.temp - 273.15) * 1.8 + 32).toFixed(2) +
+          ((response.list[2].main.temp - 273.15) * 1.8 + 32).toFixed(2) +
           " °F"
       );
-      $("#humidity3").text(
-        "Humidity: " + response.list[24].main.humidity + "%"
-      );
+      $("#humidity3").text("Humidity: " + response.list[2].main.humidity + "%");
 
       // Day 4
+      $("#day4").text(forecastDate4);
+
       $("#temp4").text(
         "Temp: " +
-          ((response.list[32].main.temp - 273.15) * 1.8 + 32).toFixed(2) +
+          ((response.list[3].main.temp - 273.15) * 1.8 + 32).toFixed(2) +
           " °F"
       );
-      $("#humidity4").text(
-        "Humidity: " + response.list[32].main.humidity + "%"
-      );
+      $("#humidity4").text("Humidity: " + response.list[3].main.humidity + "%");
 
       // Day 5
+      $("#day5").text(forecastDate5);
+
       $("#temp5").text(
         "Temp: " +
-          ((response.list[39].main.temp - 273.15) * 1.8 + 32).toFixed(2) +
+          ((response.list[4].main.temp - 273.15) * 1.8 + 32).toFixed(2) +
           " °F"
       );
-      $("#humidity5").text(
-        "Humidity: " + response.list[39].main.humidity + "%"
-      );
+      $("#humidity5").text("Humidity: " + response.list[4].main.humidity + "%");
     });
   }
 
