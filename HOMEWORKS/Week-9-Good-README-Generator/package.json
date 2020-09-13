@@ -1,0 +1,15 @@
+{
+  "name": "week-9-good-readme-generator",
+  "version": "1.0.0",
+  "description": "If your README is very long, add a table of contents to make it easy for users to find what they need.",
+  "main": "index.js",
+  "dependencies": {
+    "init": "^0.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
