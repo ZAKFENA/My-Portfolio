@@ -1,5 +1,5 @@
 
-# title
+# 
 
 ## Table of Contents
 
@@ -9,17 +9,17 @@
 - [License](#license)
 
 ## Description
-create good readme
+
 
 ## Installation
-follow step 1 and 2
+
 
 ## Usage
-follow instruction
+
+
+## Credits
 
 ## License
 
-## Contributing
-
 ## Question
-Contact: zakfena@gmail.com
+Contact: 
