@@ -27,6 +27,11 @@ function promptUser() {
       message: "Please enter instructions of use",
     },
     {
+      type: "input",
+      name: "contribution",
+      message: "Please enter instructions of how to contribute",
+    },
+    {
       type: "checkbox",
       name: "license",
       message: "Choose license",
@@ -35,7 +40,7 @@ function promptUser() {
     {
       type: "input",
       name: "github",
-      message: "Please enter your github info",
+      message: "Please enter your github username",
     },
     {
       type: "input",
@@ -65,12 +70,15 @@ ${answers.installation}
 ## Usage
 ${answers.usage}
 
-## Credits
+## Contribution 
+${answers.contribution}
 
 ## License
+${answers.license}
 
 ## Question
 Contact: ${answers.email}
+Git Hub Page: ${answers.github}
 `;
 }
 
