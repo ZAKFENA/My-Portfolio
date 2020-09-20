@@ -23,7 +23,7 @@ This app creates a README.MD file taking the responses given by the user. The us
 
 Video Walkthrough
 
-[![Video of App Working](Develop/video.PNG)](https://drive.google.com/file/d/18IlzK3E1yfFqu7o8ADmqhabi_q4TFkaM/view)
+[![Video of App Working](Develop/Video.PNG)](https://drive.google.com/file/d/18IlzK3E1yfFqu7o8ADmqhabi_q4TFkaM/view)
 
 Screen Shots
 ![Screenshot1](Develop/Screenshot1.PNG)
