@@ -17,7 +17,7 @@ router.get("/notes/:id", function (req, res) {
 
 router.post("/notes", function (req, res) {
   res.json(true);
-  fs.appendFileSync(db.json, req.body, "UTF-8");
+  fs.appendFileSync("./db/db.json", req.body, "UTF-8");
   console.log(noteData);
 });
 
