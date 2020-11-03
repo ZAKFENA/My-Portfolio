@@ -1,18 +1,40 @@
-# 04 Multiple Choice Quiz
+# Quiz App
 
-- Start Function shows the first page with quiz explanation and button to start
+## Table of Contents
 
-- Once started the counter stars counting down.
+- [Description](#Description)
+- [Screen Shots](#Screen-Shots)
+- [Technology Used](#Technology-Used)
+- [License](#license)
 
-  - If wrong answer is selected its deducted by 10
-  - If all questions are answered before it gets to zero its cleared out.
-
-- When an answer is selected a Wrong / Correct message pops at the bottom for two seconds.
-
-- When the questions are completed, it directs to a page that shows final score and option to save the score.
-
-- If saved a button is appears that shows scores.
-
+## Description
+This is a quiz app wich lets the user take quiz. When the user starts quiz a timer will also start counting down. When the timer get to zero or the finishes the question, the user will be prompted to enter their initials and their score will be saved. The 'view score' button shows the list of the initials and scores. 
 ## Link to working webpage
 
 [link To Github Site!](https://zakfena.github.io/My-Portfolio/HOMEWORKS/Week-4-CodeQuiz/
+
+## Screen-Shots
+
+![Screen Shot 1](./Assets/screenshot1.PNG)
+![Screen Shot 2](./Assets/screenshot2.PNG)
+![Screen Shot 3](./Assets/screenshot3.PNG)
+
+## Technology-Used
+
+- HTML
+- CSS
+- Javascript
+- Bootstrap
+
+## License
+
+Copyright @ Zekarias Negassa 2020
+
+## Question
+
+If you have any questions please feel free to contact me.\
+**Email:** zakfena@gmail.com\
+**Git Hub** https://github.com/ZAKFENA
+
+
+
