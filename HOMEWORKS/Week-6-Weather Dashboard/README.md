@@ -35,8 +35,7 @@ Open Weather API
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Question
-```
+
 If you have any questions please feel free to contact me.\
 **Email:** zakfena@gmail.com\
 **Git Hub** https://github.com/ZAKFENA
-```
