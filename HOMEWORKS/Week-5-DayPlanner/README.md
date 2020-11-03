@@ -1,4 +1,4 @@
-# Title
+# Day Planner
 
 ## Table of Contents
 
