@@ -11,10 +11,10 @@
 [Click Here](https://zakfena.github.io/My-Portfolio//HOMEWORKS/Week-5-DayPlanner/Develop/)
 
 ## Description
-```
-- This is a day planner app that saves notes on a local storage. It uses moment.js for displaying times. All past, current and future hours have their own colors and automatically change. 
 
-```
+This is a day planner app that saves notes on a local storage. It uses moment.js for displaying times. All past, current and future hours have their own colors and automatically change. 
+
+
 ## Screen-Shots
 
 ![Screen Shot 1](./Assets/working-page.PNG)
