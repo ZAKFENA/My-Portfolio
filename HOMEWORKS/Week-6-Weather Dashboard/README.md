@@ -1,5 +1,5 @@
 
-# Weather Dashboard
+## Weather Dashboard
 
 ## Table of Contents
 
@@ -16,7 +16,6 @@
 This site searches for cities and displays weather info for that city. It uses Open Weather API to get the info and store it on the local storage to display it as search history. It also displays the 5 day forecast for that city.
 
 ```
-
 
 ## Screen-Shots
 ![Animated gif](./Assets/Weather-Dashboard.gif)
