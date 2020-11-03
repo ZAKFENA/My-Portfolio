@@ -1,24 +1,43 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Title
+
+## Table of Contents
+
+- [Description](#Description)
+- [Screen Shots](#Screen-Shots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technology Used](#Technology-Used)
+- [License](#license)
+
+## Description
+```
+- This is a day planner app that saves notes on a local storage. It uses moment.js for displaying times. All past, current and future hours have their own colors and automatically change. 
+
+-- Deployed site
+![link To Github Site!](https://zakfena.github.io/My-Portfolio//HOMEWORKS/Week-5-DayPlanner/Develop/
 
 ```
-- The color of each row changes based on the Hour at the moment.
-    -Got the current hour from moment.js
+## Screen-Shots
 
-- When there is input in each row its saved to local and displayed from local strorage
+![Screen Shot 1](./Assets/working-page.PNG)
 
-```
+## Technology-Used
+- HTML
+- CSS / Bootstrap
+- Javascript
+- moment.js
 
-## Link to working app
+## License
 
-```
-[link To Github Site!](https://zakfena.github.io/My-Portfolio//HOMEWORKS/Week-5-DayPlanner/Develop/
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-```
+## Question
 
-## Finished site Picture
+If you have any questions please feel free to contact me.\
+**Email:** zakfena@gmail.com\
+**Git Hub** https://github.com/ZAKFENA
 
-```
-- The picture shows after data is entered and the web is refreshed. Also shows the current time on the header.
 
-![day planner demo](./Assets/working-page.PNG)
-```
+
+
+
